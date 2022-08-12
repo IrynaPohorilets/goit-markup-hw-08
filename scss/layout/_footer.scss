@@ -1,0 +1,45 @@
+.footer {
+    padding: 60px 0;
+    background-color: var(--darc-bg-cl);
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-address {
+    font-style: normal;
+    flex-direction: column;
+    margin-right: 70px;
+}
+
+.footer-mail,
+.footer-phone {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--time-duration) var(--timing-function);
+}
+
+.footer-mail:hover,
+.footer-mail:focus {
+    color: var(--accet-txt-cl);
+}
+
+.footer-phone:hover,
+.footer-phone:focus {
+    color: var(--accet-txt-cl);
+}
+
+.footer-link {
+    color: var(--sec-txt-cl);
+    transition: color var(--time-duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+            color: var(--accet-txt-cl);
+        }
+}

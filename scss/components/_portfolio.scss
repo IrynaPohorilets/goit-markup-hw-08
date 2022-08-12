@@ -1,0 +1,14 @@
+.portfolio-list {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.portfolio-item {
+    background: var(--light-bg-cl);
+    border-radius: 4px;
+    transition: color var(--time-duration) var(--timing-function),
+        background-color var(--time-duration) var(--timing-function),
+        box-shadow var(--time-duration) var(--timing-function);
+}

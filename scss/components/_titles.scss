@@ -1,0 +1,125 @@
+.general-info {
+    margin: 0 auto;
+    width: 696px;
+    margin-bottom: 30px;
+    font-family: var(--main-font);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-txt-cl);
+}
+
+.about-team-info,
+.about-info {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-txy-cl);
+}
+.about-team-info {
+    margin-bottom: 50px;
+}
+.about-info {
+    margin-bottom: 50px;
+}
+.project-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    text-align: center;
+    padding: 27px 0px;
+    color: var(--white-txt-cl);
+
+    background-color: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.team-info {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-txy-cl);
+}
+
+.team-info-position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--sec-txt-cl);
+    margin-bottom: 16px;
+}
+
+.clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-txy-cl);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.social-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-txt-cl);
+}
+
+.work-card-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+    color: var(--main-txy-cl);
+    text-decoration: none;
+}
+
+.work-cart-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.03em;
+    color: var(--sec-txt-cl);
+    text-decoration: none;
+}
+
+.overlay-desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: #eeeeee;
+}
+
+.form-title {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-txy-cl);
+}

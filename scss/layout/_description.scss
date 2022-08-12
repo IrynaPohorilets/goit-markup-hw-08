@@ -1,0 +1,41 @@
+.description {
+    padding-bottom: 0px;
+}
+
+.description .item+.item {
+    margin-left: 30px;
+}
+
+.info-list {
+    display: flex;
+}
+
+.about-title {
+    width: 270px;
+
+    &:not(:first-child) {
+            margin-left: 30px;
+        }
+}
+
+.info-about {
+    margin-bottom: 10px;
+}
+
+h2.info-about {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-txy-cl);
+    margin-bottom: 9px;
+}
+
+.info-about-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--sec-txt-cl);
+}
