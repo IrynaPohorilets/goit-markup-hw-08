@@ -1,5 +1,4 @@
 .logo {
-    margin-right: 93px;
 
     color: var(--main-txy-cl);
     font-family: var(--secondary-font);
@@ -7,6 +6,18 @@
     font-size: 26px;
     line-height: calc(31 / 26);
     text-decoration: none;
+
+    @media screen and (min-width: 768px) {
+            margin-right: 0;
+        }
+    
+    @media screen and (min-width: 1200px) {
+            margin-right: 92px;
+        }
+    
+    @media screen and (max-width: 767px) {
+            margin-right: 0;
+        }
 }
 
 .logo-footer {
@@ -21,6 +32,8 @@
     font-size: 26px;
     line-height: calc(31 / 26);
     text-decoration: none;
+
+    
 }
 
 .studio {
