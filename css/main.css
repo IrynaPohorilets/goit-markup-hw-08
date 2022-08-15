@@ -35,6 +35,11 @@ body {
   color: var(--main-txy-cl);
   background-color: var(--white-txt-cl);
 }
+@media screen and (max-width: 767px) {
+  body {
+    padding-top: 60px;
+  }
+}
 
 h1,
 h2,
@@ -340,6 +345,11 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+@media screen and (max-width: 1200px) {
+  .project-text {
+    display: none;
+  }
 }
 
 .team-info {
