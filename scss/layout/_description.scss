@@ -8,14 +8,34 @@
 
 .info-list {
     display: flex;
+    flex-wrap: wrap;
+        gap: var(--indent);
+        --items: 1;
+        justify-content: center;
+    
+        @media screen and (min-width: 768px) {
+            --items: 2;
+        }
+    
+        @media screen and (min-width:1200px) {
+            --items: 4;
+        }
 }
 
 .about-title {
-    width: 270px;
+    width: 450px;
 
-    &:not(:first-child) {
-            margin-left: 30px;
+    @media screen and (min-width: 768px) {
+            width: 354px;
         }
+    
+        @media screen and (min-width:1200px) {
+            width: 270px;
+        }
+
+
+
+
 }
 
 .info-about {
@@ -30,6 +50,10 @@ h2.info-about {
     text-transform: uppercase;
     color: var(--main-txy-cl);
     margin-bottom: 9px;
+
+    @media screen and (max-width: 768px) {
+            text-align: center;
+        }
 }
 
 .info-about-text {

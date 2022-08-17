@@ -27,7 +27,7 @@
   </head>
   <body>
     <!-- Header section -->
-    <header class="header">
+    <!--<header class="header">
       <div class="container header-container">
         <a class="logo" href="/index.html"><span class="web">Web</span>Studio </a>
         <nav class="nav">
@@ -61,6 +61,7 @@
             </a>
           </li>
         </ul>
+        -->
         <!--<button type="button" class="mobile-menu" aria-expanded="false" data-menu-open>
           <svg
             class="mobile-menu__icons"
@@ -126,13 +127,13 @@
       </div>
     </header>
     <!-- Main section -->
-    <main>
+    <!--<main>
       <section class="main section-wrap section">
         <div class="container">
           <h1 class="general-info">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="main-button btn" data-modal-open>Заказать услугу</button>
         </div>
-      </section>
+      </section>-->
       <section class="section description">
         <div class="container description-info">
           <ul class="info-list list">
@@ -184,7 +185,7 @@
         </div>
       </section>
       <!--About section-->
-      <section class="about section">
+      <!--<section class="about section">
         <div class="container about-container">
           <h2 class="about-info">Чем мы занимаемся</h2>
           <ul class="about-list list">
@@ -225,18 +226,32 @@
         </div>
       </section>
       <!--Team section-->
-      <section class="team-section">
+      <!--<section class="team-section section">
         <div class="container">
           <h2 class="about-team-info">Наша команда</h2>
           <ul class="about-team list">
             <li class="about-teams">
-              <img
-                class="about-team1-img"
-                src="./images/tim/img.jpg"
-                alt="People 1"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images\tim\img-1@1x-lg.jpg 1x, ./images\tim\img-1@2x-lg.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images\tim\img-1@1x-md.jpg 1x, ./images\tim\img-1@2x-md.jpg 2x"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./images\tim\img-1@1x-sm.jpg 1x, ./images\tim\img-1@2x-sm.jpg 2x"
+                />
+                <img
+                  class="about-team1-img"
+                  src="./images/tim/img.jpg"
+                  alt="Игорь Демьяненко"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team-wrapper">
                 <h3 class="team-info">Игорь Демьяненко</h3>
                 <p class="team-info-position">Product Designer</p>
@@ -297,13 +312,27 @@
               </div>
             </li>
             <li class="about-teams">
-              <img
-                class="about-team2-img"
-                src="./images/tim/img1.jpg"
-                alt="People 2"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images\tim\img-2@1x-lg.jpg 1x, ./images\tim\img-2@2x-lg.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images\tim\img-2@1x-md.jpg 1x, ./images\tim\img-2@2x-md.jpg 2x"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./images\tim\img-2@1x-sm.jpg 1x, ./images\tim\img-2@2x-sm.jpg 2x"
+                />
+                <img
+                  class="about-team1-img"
+                  src="./images/tim/img.jpg"
+                  alt="Ольга Репина"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team-wrapper">
                 <h3 class="team-info">Ольга Репина</h3>
                 <p class="team-info-position">Frontend Developer</p>
@@ -364,13 +393,27 @@
               </div>
             </li>
             <li class="about-teams">
-              <img
-                class="about-team3-img"
-                src="./images/tim/img2.jpg"
-                alt="People 3"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images\tim\img-3@1x-lg.jpg 1x, ./images\tim\img-3@2x-lg.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images\tim\img-3@1x-md.jpg 1x, ./images\tim\img-3@2x-md.jpg 2x"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./images\tim\img-3@1x-sm.jpg 1x, ./images\tim\img-3@2x-sm.jpg 2x"
+                />
+                <img
+                  class="about-team1-img"
+                  src="./images/tim/img.jpg"
+                  alt="Николай Тарасов"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team-wrapper">
                 <h3 class="team-info">Николай Тарасов</h3>
                 <p class="team-info-position">Marketing</p>
@@ -431,13 +474,27 @@
               </div>
             </li>
             <li class="about-teams">
-              <img
-                class="about-team4-img"
-                src="./images/tim/img3.jpg"
-                alt="People 4"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images\tim\img-4@1x-lg.jpg 1x, ./images\tim\img-4@2x-lg.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images\tim\img-4@1x-md.jpg 1x, ./images\tim\img-4@2x-md.jpg 2x"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./images\tim\img-4@1x-sm.jpg 1x, ./images\tim\img-4@2x-sm.jpg 2x"
+                />
+                <img
+                  class="about-team1-img"
+                  src="./images/tim/img.jpg"
+                  alt="Михаил Ермаков"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team-wrapper">
                 <h3 class="team-info">Михаил Ермаков</h3>
                 <p class="team-info-position">UI Designer</p>
@@ -501,7 +558,7 @@
         </div>
       </section>
       <!-- Customers section -->
-      <section class="clients section">
+      <!--<section class="clients section">
         <div class="clients-container container">
           <h2 class="clients-title">Постоянные клиенты</h2>
           <ul class="clients-list list">
@@ -588,7 +645,7 @@
       </section>
     </main>
     <!-- Footer section -->
-    <footer class="footer">
+    <!--<footer class="footer section">
       <div class="container footer-container">
         <div class="footer-addresa">
           <a class="logo foorer-logo" href="/index.html">
@@ -686,7 +743,7 @@
       </div>
     </footer>
     <!-- Modal window -->
-    <div class="backdrop is-hidden" data-modal>
+    <!--<div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="button-close" data-modal-close>
           <svg class="modal-btn-icon" width="18" height="18">
