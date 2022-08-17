@@ -406,6 +406,7 @@ img {
   .clients-title {
     font-size: 36px;
     line-height: 1.1666666667;
+    margin-bottom: 50px;
   }
 }
 
@@ -1272,13 +1273,23 @@ h2.info-about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
+  --items: 2;
+}
+@media screen and (min-width: 768px) {
+  .clients-list {
+    --items: 3;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    --items: 6;
+  }
 }
 
 .clients-link {
@@ -1291,7 +1302,7 @@ h2.info-about {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -1303,6 +1314,16 @@ h2.info-about {
 .clients-link:hover, .clients-link:focus {
   color: var(--accet-txt-cl);
   border: 1px solid var(--accet-txt-cl);
+}
+@media screen and (min-width: 768px) {
+  .clients-link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-link {
+    width: 170px;
+  }
 }
 
 .clients-logo {

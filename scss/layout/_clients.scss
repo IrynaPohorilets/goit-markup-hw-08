@@ -1,15 +1,24 @@
 .clients-list {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+    --items: 2;
+    
+        @media screen and (min-width: 768px) {
+            --items: 3;
+        }
+    
+        @media screen and (min-width:1200px) {
+            --items: 6;
+        }
 }
 
 .clients-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -25,6 +34,14 @@
                 color: var(--accet-txt-cl);
                 border: 1px solid var(--accet-txt-cl);
             }
+
+        @media screen and (min-width: 768px) {
+            width: 226px;
+        }
+            
+        @media screen and (min-width:1200px) {
+            width: 170px;
+        }
 }
 
 .clients-logo {
