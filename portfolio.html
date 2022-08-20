@@ -61,7 +61,7 @@
             </a>
           </li>
         </ul>
-        <!--<button type="button" class="mobile-menu" aria-expanded="false" data-menu-open>
+        <button type="button" class="mobile-menu" aria-expanded="false" data-menu-open>
           <svg
             class="mobile-menu__icons"
             width="40"
@@ -84,9 +84,9 @@
               <a href="./index.html" class="mobile-list__link link">Студія</a>
             </li>
             <li class="mobile-list__iteam">
-              <a href="./portfolio.html" class="mobile-list__link nav__link--current link"
-                >Портфоліо
-              </a>
+              <a href="./portfolio.html" class="mobile-list__link mob__link--current link"
+                >Портфоліо</a
+              >
             </li>
             <li class="mobile-list__iteam">
               <a href="" class="mobile-list__link link">Контакти</a>
@@ -98,13 +98,13 @@
               <a
                 href="tel:+380961111111"
                 class="mobile-contacts__link mobile-contacts__link--accent link"
-                >+38 096 111 11 11
-              </a>
+                >+38 096 111 11 11</a
+              >
             </li>
             <li class="mobile-contacts__iteam">
               <a href="mailto:info@devstudio.com" class="mobile-contacts__link link"
-                >info@devstudio.com
-              </a>
+                >info@devstudio.com</a
+              >
             </li>
           </ul>
 
@@ -122,7 +122,7 @@
               <a href="" class="mobile-social__link link">Linkedin</a>
             </li>
           </ul>
-        </div> -->
+        </div>
       </div>
     </header>
     <!-- Main section -->
@@ -150,11 +150,30 @@
           </ul>
         </div>
         <div class="container">
-          <ul class="work-cards link list">
+          <ul class="portfolio-card link list">
             <li class="work-card link list">
               <a class="work-cart-about" href="">
                 <div class="work-thumb">
-                  <img src="./images/works/img1.jpg" width="370" height="294" alt="Изображение" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images\works\img-1@1x-lg.jpg 1x, ./images\works\img-1@2x-lg.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images\works\img-1@1x-md.jpg 1x, ./images\works\img-1@2x-md.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="./images\works\img-1@1x-sm.jpg 1x, ./images\works\img-1@2x-sm.jpg 2x"
+                    />
+                    <img
+                      src="./images\works\img-1@1x-sm.jpg"
+                      alt="Технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="work-overlay">
                     <p class="overlay-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -172,7 +191,26 @@
             <li class="work-card link list">
               <a class="work-cart-about" href="">
                 <div class="work-thumb">
-                  <img src="./images/works/img2.jpg" width="370" height="294" alt="Изображение" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images\works\img-2@1x-lg.jpg 1x, ./images\works\img-2@2x-lg.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images\works\img-2@1x-md.jpg 1x, ./images\works\img-2@2x-md.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="./images\works\img-2@1x-sm.jpg 1x, ./images\works\img-2@2x-sm.jpg 2x"
+                    />
+                    <img
+                      src="./images\works\img-2@1x-sm.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="work-overlay">
                     <p class="overlay-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -190,7 +228,26 @@
             <li class="work-card link list">
               <a class="work-cart-about" href="">
                 <div class="work-thumb">
-                  <img src="./images/works/img3.jpg" width="370" height="294" alt="Изображение" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images\works\img-3@1x-lg.jpg 1x, ./images\works\img-3@2x-lg.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images\works\img-3@1x-md.jpg 1x, ./images\works\img-3@2x-md.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="./images\works\img-3@1x-sm.jpg 1x, ./images\works\img-3@2x-sm.jpg 2x"
+                    />
+                    <img
+                      src="./images\works\img-3@1x-sm.jpg"
+                      alt="Ресторан Seafood"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="work-overlay">
                     <p class="overlay-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -208,7 +265,26 @@
             <li class="work-card link list">
               <a class="work-cart-about" href="">
                 <div class="work-thumb">
-                  <img src="./images/works/img4.jpg" width="370" height="294" alt="Изображение" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images\works\img-4@1x-lg.jpg 1x, ./images\works\img-4@2x-lg.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images\works\img-4@1x-md.jpg 1x, ./images\works\img-4@2x-md.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="./images\works\img-4@1x-sm.jpg 1x, ./images\works\img-4@2x-sm.jpg 2x"
+                    />
+                    <img
+                      src="./images\works\img-4@1x-sm.jpg"
+                      alt="Проєкт Prime"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="work-overlay">
                     <p class="overlay-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -226,7 +302,26 @@
             <li class="work-card link list">
               <a class="work-cart-about" href="">
                 <div class="work-thumb">
-                  <img src="./images/works/img5.jpg" width="370" height="294" alt="Изображение" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images\works\img-5@1x-lg.jpg 1x, ./images\works\img-5@2x-lg.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images\works\img-5@1x-md.jpg 1x, ./images\works\img-5@2x-md.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="./images\works\img-5@1x-sm.jpg 1x, ./images\works\img-5@2x-sm.jpg 2x"
+                    />
+                    <img
+                      src="./images\works\img-5@1x-sm.jpg"
+                      alt="Проєкт Boxes"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="work-overlay">
                     <p class="overlay-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -244,7 +339,26 @@
             <li class="work-card link list">
               <a class="work-cart-about" href="">
                 <div class="work-thumb">
-                  <img src="./images/works/img6.jpg" width="370" height="294" alt="Изображение" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images\works\img-6@1x-lg.jpg 1x, ./images\works\img-6@2x-lg.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images\works\img-6@1x-md.jpg 1x, ./images\works\img-6@2x-md.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="./images\works\img-6@1x-sm.jpg 1x, ./images\works\img-6@2x-sm.jpg 2x"
+                    />
+                    <img
+                      src="./images\works\img-6@1x-sm.jpg"
+                      alt="Inspiration has no Borders"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="work-overlay">
                     <p class="overlay-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -262,7 +376,26 @@
             <li class="work-card link list">
               <a class="work-cart-about" href="">
                 <div class="work-thumb">
-                  <img src="./images/works/img7.jpg" width="370" height="294" alt="Изображение" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images\works\img-7@1x-lg.jpg 1x, ./images\works\img-7@2x-lg.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images\works\img-7@1x-md.jpg 1x, ./images\works\img-7@2x-md.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="./images\works\img-7@1x-sm.jpg 1x, ./images\works\img-7@2x-sm.jpg 2x"
+                    />
+                    <img
+                      src="./images\works\img-7@1x-sm.jpg"
+                      alt="Видання Limited Edition"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="work-overlay">
                     <p class="overlay-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -280,7 +413,26 @@
             <li class="work-card link list">
               <a class="work-cart-about" href="">
                 <div class="work-thumb">
-                  <img src="./images/works/img8.jpg" width="370" height="294" alt="Изображение" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images\works\img-8@1x-lg.jpg 1x, ./images\works\img-8@2x-lg.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images\works\img-8@1x-md.jpg 1x, ./images\works\img-8@2x-md.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="./images\works\img-8@1x-sm.jpg 1x, ./images\works\img-8@2x-sm.jpg 2x"
+                    />
+                    <img
+                      src="./images\works\img-8@1x-sm.jpg"
+                      alt="Проєкт LAB"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="work-overlay">
                     <p class="overlay-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -298,7 +450,26 @@
             <li class="work-card link list">
               <a class="work-cart-about" href="">
                 <div class="work-thumb">
-                  <img src="./images/works/img9.jpg" width="370" height="294" alt="Изображение" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images\works\img-9@1x-lg.jpg 1x, ./images\works\img-9@2x-lg.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images\works\img-9@1x-md.jpg 1x, ./images\works\img-9@2x-md.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="./images\works\img-9@1x-sm.jpg 1x, ./images\works\img-9@2x-sm.jpg 2x"
+                    />
+                    <img
+                      src="./images\works\img-9@1x-sm.jpg"
+                      alt="Growing Business"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="work-overlay">
                     <p class="overlay-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -318,99 +489,104 @@
       </section>
     </main>
     <!-- Footer section -->
-    <footer class="footer">
+    <footer class="footer section">
       <div class="container footer-container">
-        <div class="footer-addresa">
-          <a class="logo foorer-logo" href="/index.html">
-            <span class="web">Web</span><span class="studio">Studio</span>
-          </a>
-          <address class="footer-address">
-            <ul class="footer-list list">
-              <li class="footer-item">
+        <div class="footer-tablet">
+          <div class="footer-addresa">
+            <a class="logo foorer-logo" href="/index.html">
+              <span class="web">Web</span><span class="studio">Studio</span>
+            </a>
+            <address class="footer-address">
+              <ul class="footer-list list">
+                <li class="footer-item">
+                  <a
+                    class="footer-adres link"
+                    href="https://goo.gl/maps/Yb8iC36x8tru1GQm8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >г. Киев, пр-т Леси Украинки, 26
+                  </a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link link" href="mailto:info@example.com">info@example.com</a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link link" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-social">
+            <h2 class="social-title">Присоединяйтесь</h2>
+            <ul class="social-links list">
+              <li class="social-item">
                 <a
-                  class="footer-adres link"
-                  href="https://goo.gl/maps/Yb8iC36x8tru1GQm8"
+                  class="social-link-footer link"
+                  href=""
                   target="_blank"
                   rel="noopener noreferrer"
-                  >г. Киев, пр-т Леси Украинки, 26
+                  aria-label="instagram"
+                >
+                  <svg class="socials-icon-footer" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="footer-item">
-                <a class="footer-link link" href="mailto:info@example.com">info@example.com</a>
+              <li class="socials-item">
+                <a
+                  class="social-link-footer link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="twitter"
+                >
+                  <svg class="socials-icon-footer" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-item">
-                <a class="footer-link link" href="tel:+380991111111">+38 099 111 11 11</a>
+              <li class="socials-item">
+                <a
+                  class="social-link-footer link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="facebook"
+                >
+                  <svg class="socials-icon-footer" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="social-link-footer link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="linkedin"
+                >
+                  <svg class="socials-icon-footer" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="footer-social">
-          <h2 class="social-title">Присоединяйтесь</h2>
-          <ul class="social-links list">
-            <li class="social-item">
-              <a
-                class="social-link-footer link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="instagram"
-              >
-                <svg class="socials-icon-footer" width="20" height="20">
-                  <use href="./images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-item">
-              <a
-                class="social-link-footer link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="twitter"
-              >
-                <svg class="socials-icon-footer" width="20" height="20">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-item">
-              <a
-                class="social-link-footer link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="facebook"
-              >
-                <svg class="socials-icon-footer" width="20" height="20">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-item">
-              <a
-                class="social-link-footer link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="linkedin"
-              >
-                <svg class="socials-icon-footer" width="20" height="20">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <div class="footer-form">
           <p class="footer-form-title">Подпишитесь на рассылку</p>
           <form class="form">
-            <input class="footer-form-input" type="email" name="user-emil" placeholder="E-mail" />
-            <button class="footer-btn" type="button">
-              Подписаться
-              <svg class="footer-btn-icon" width="24" height="24">
-                <use href="./images/icons.svg#send"></use>
-              </svg>
-            </button>
+            <div class="subscribe-form">
+              <input class="footer-form-input" type="email" name="user-emil" placeholder="E-mail" />
+              <button class="footer-btn" type="button">
+                Подписаться
+                <svg class="footer-btn-icon" width="24" height="24">
+                  <use href="./images/icons.svg#send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>

@@ -6,7 +6,7 @@
     border: transparent;
     cursor: pointer;
     margin: 0;
-    transition: fill var(--timing-function) var(--time-duration);
+    transition: fill var(--time-duration) var(--timing-function);
 
     @media screen and (min-width: 768px) {
         display: none;
@@ -30,7 +30,7 @@
     height: 100%;
     background-color: var(--white-txt-cl);
     transform: translateX(100%);
-    transition: transform var(--timing-function) var(--time-duration);
+    transition: transform var(--time-duration) var(--timing-function);
 
     @media screen and (min-width: 768px) {
         display: none;
@@ -124,3 +124,4 @@
         color: var(--accet-txt-cl);
 
     }
+}

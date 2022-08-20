@@ -40,8 +40,11 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1) rotate(0);
 
-    width: 528px;
-    min-height: 581px;
+    width: 100%;
+    max-width: 450px;
+    height: 609px;
+
+    
     padding: 40px;
 
     background: var(--white-txt-cl);
@@ -52,7 +55,17 @@
     transition: transform var(--time-duration) var(--timing-function),
         opacity var(--time-duration) var(--timing-function);
     opacity: 1;
-}
+
+    @media screen and (max-height: 400px) {
+            height: 100%;
+            overflow: auto;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            max-width: 528px;
+            max-height: 581px;
+        }
+    }
 
 .modal-form {
     text-align: center;

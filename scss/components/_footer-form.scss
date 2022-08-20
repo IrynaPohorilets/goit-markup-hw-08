@@ -4,9 +4,22 @@
 }
 
 .footer-form {
-    margin-left: 93px;
+        @media screen and (min-width:1200px) {
+            margin-left: auto;
+        }
 }
+.subscribe-form {
+    display: flex;
+    align-items: center;
 
+    @media screen and (max-width: 1200px) {
+        flex-direction: column;
+    }
+
+        @media screen and (min-width: 768px) {
+        margin-left:166px ;
+        }
+}
 .footer-form-title {
     font-weight: 700;
     font-size: 14px;
@@ -18,19 +31,33 @@
 }
 
 .footer-form-input {
-    width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    outline: transparent;
-    background-color: transparent;
-    padding: 15px 16px;
-    color: rgba(255, 255, 255, 0.6);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(20 / 16);
-
-    letter-spacing: 0.03em;
-    margin-right: 12px;
+    
+     border: 1px solid rgba(255, 255, 255, 0.3);
+     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+     border-radius: 4px;
+     outline: transparent;
+     background-color: transparent;
+     padding: 15px 16px;
+     color: rgba(255, 255, 255, 0.6);
+    
+     font-size: 16px;
+     line-height: calc(20 / 16);
+     letter-spacing: 0.03em;
+    
+    @media screen and (max-width: 767px) {
+            width: 450px;
+            margin-bottom: 20px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            width: 450px;
+            margin-bottom: 20px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 0;
+            width: 358px;
+            margin-right: 12px;
+    
+        }
 }

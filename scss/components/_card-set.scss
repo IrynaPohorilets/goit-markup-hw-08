@@ -19,5 +19,5 @@
     text-decoration: none;
 }
 .work-card {
-    flex-basis: calc((100% - 30px * 2) / 3);
+        flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
