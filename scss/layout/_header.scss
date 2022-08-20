@@ -174,8 +174,11 @@
             margin-left: auto;
             flex-direction: row;
             align-items: center;
+                align-items: flex-end;
+                display: flex;
+                }
         }
-}
+
 .contacts-header__item {
         margin-right: 50px;
 
