@@ -2,8 +2,4 @@ body {
     font-family: var(--main-font);
     color: var(--main-txy-cl);
     background-color: var(--white-txt-cl);
-
-    @media screen and (max-width: 767px) {
-            padding-top: 60px;
-        }
 }

@@ -36,11 +36,6 @@ body {
   color: var(--main-txy-cl);
   background-color: var(--white-txt-cl);
 }
-@media screen and (max-width: 767px) {
-  body {
-    padding-top: 60px;
-  }
-}
 
 h1,
 h2,
