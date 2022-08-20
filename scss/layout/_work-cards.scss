@@ -42,3 +42,15 @@
     padding-right: 24px;
     padding-left: 24px;
 }
+
+.work-card-img {
+        @media screen and (min-width: 768px) {
+            width: 354px;
+            height: 294px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 370px;
+            height: 294px;
+        }
+    }
