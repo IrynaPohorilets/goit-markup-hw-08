@@ -17,6 +17,8 @@
 }
 
 .main-button {
+    display: block;
+    margin: 0 auto;
     text-align: center; 
     background-color: var(--accet-txt-cl);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

@@ -1,13 +1,12 @@
-.description {
-    padding-bottom: 0px;
-}
+
 
 .description .item+.item {
     margin-left: 30px;
 }
-.about-container {
-@media screen and (max-width: 1200px) {
+.about {
+@media screen and (max-width: 1199px) {
         display: none;
+        padding-top: 0;
     }
 }
 .info-list {

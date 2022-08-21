@@ -152,6 +152,8 @@ img {
 }
 
 .main-button {
+  display: block;
+  margin: 0 auto;
   text-align: center;
   background-color: var(--accet-txt-cl);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -301,7 +303,9 @@ img {
 
 .foorer-logo {
   display: inline-block;
+  margin: 0;
   margin-bottom: 20px;
+  padding: 0;
 }
 
 .general-info {
@@ -328,12 +332,12 @@ img {
 .about-team-info,
 .about-info {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.1666666667;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-txy-cl);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .about-team-info,
@@ -392,18 +396,12 @@ img {
 
 .clients-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.1666666667;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-txy-cl);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .clients-title {
@@ -459,6 +457,13 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-txy-cl);
+}
+
+@media screen and (min-width: 1200px) {
+  .social-title,
+.footer-form-title {
+    text-align: left;
+  }
 }
 
 .socials {
@@ -852,6 +857,18 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .form {
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -868,17 +885,12 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .subscribe-form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-}
-@media screen and (min-width: 768px) {
-  .subscribe-form {
-    margin-left: 166px;
   }
 }
 
@@ -1245,12 +1257,6 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .header-phone {
-    margin-top: 10px;
-  }
-}
-
 .nav__link,
 .nav__link--current,
 .nav__link--current-second .header-mail {
@@ -1263,10 +1269,6 @@ img {
 
 .nav__link:last-child {
   margin-right: 0;
-}
-
-.header-mail {
-  margin-right: 50px;
 }
 
 .hover-link:hover .hover-link:focus .hover-link:active {
@@ -1307,6 +1309,7 @@ img {
 @media screen and (max-width: 767px) {
   .header-nav-nav {
     display: none;
+    gap: 10px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1321,7 +1324,8 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-left: 96px;
+    margin-left: auto;
+    gap: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1340,6 +1344,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 30px;
   }
 }
 
@@ -1348,14 +1353,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .contacts-header__item {
-    margin-bottom: 10px;
     margin-right: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts-header__item {
     margin-bottom: 0;
-    margin-right: 30px;
   }
 }
 .contacts-header__item:last-child {
@@ -1399,15 +1402,17 @@ img {
   color: var(--accet-txt-cl);
 }
 
-.main {
-  background-color: var(--darc-bg-cl);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636363636;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--white-txt-cl);
+@media screen and (min-width: 1200px) {
+  .header-icon-mail {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-icon-phone {
+    height: 16px;
+  }
 }
 
 .section-wrap {
@@ -1416,7 +1421,6 @@ img {
   margin: 0 auto;
   background-position: center;
   max-width: 1600px;
-  text-align: center;
   padding: 118px 0;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/section-wrap/hero@1x_sm.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/section-wrap/hero@1x_sm.jpg");
@@ -1488,17 +1492,14 @@ img {
   margin-bottom: 30px;
 }
 
-.description {
-  padding-bottom: 0px;
-}
-
 .description .item + .item {
   margin-left: 30px;
 }
 
-@media screen and (max-width: 1200px) {
-  .about-container {
+@media screen and (max-width: 1199px) {
+  .about {
     display: none;
+    padding-top: 0;
   }
 }
 
@@ -1568,8 +1569,6 @@ h2.info-about {
 
 .team-section {
   background-color: var(--light-bg-cl);
-  padding-bottom: 94px;
-  padding-top: 94px;
 }
 
 .about-team {
@@ -1762,28 +1761,9 @@ h2.info-about {
   }
 }
 
-.footer-addresa {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
 @media screen and (min-width: 768px) {
   .footer-addresa {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-direction: column;
-        flex-direction: column;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1792,6 +1772,7 @@ h2.info-about {
         -ms-flex-pack: unset;
             justify-content: unset;
     margin-bottom: 0;
+    text-align: left;
   }
 }
 
@@ -1890,6 +1871,11 @@ h2.info-about {
   padding-bottom: 20px;
   padding-right: 24px;
   padding-left: 24px;
+}
+@media screen and (min-width: 768px) {
+  .about-cards {
+    height: 146px;
+  }
 }
 
 @media screen and (min-width: 768px) {

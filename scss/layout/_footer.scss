@@ -44,27 +44,22 @@
 }
 
 .footer-addresa{
-        display: flex;
-        flex-direction: column;
 
         @media screen and (min-width: 768px) {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            flex-direction: column;
+        text-align: center;
         }
 
         @media screen and (min-width: 1200px) {
             justify-content: unset;
             margin-bottom: 0;
+            text-align: left;
         }
     }
 
         .footer-list {
         @media screen and (max-width: 767px) {
-                    margin-top: 0;
-                
-                }
+            margin-top: 0;
+        }
         }
 
 .footer-item:not(:last-child) {

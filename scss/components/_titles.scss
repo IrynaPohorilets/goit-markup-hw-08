@@ -21,12 +21,12 @@ max-width: 360px;
 .about-team-info,
 .about-info {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: calc(42 / 36);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-txy-cl);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     @media screen and (min-width:1200px) {
             font-size: 36px;
@@ -84,14 +84,12 @@ max-width: 360px;
 
 .clients-title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: calc(42 / 36);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-txy-cl);
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     @media screen and (min-width:1200px) {
             font-size: 36px;
@@ -146,4 +144,11 @@ max-width: 360px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-txy-cl);
+}
+
+.social-title,
+.footer-form-title {
+@media screen and (min-width:1200px) {
+        text-align: left;
+    }
 }
